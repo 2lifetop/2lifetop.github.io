@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <style>
+        #div1{
+            position: absolute;
+            display: block;
+            box-shadow:0 0 3px rgba(0,0,0,0.5);
+            height: 50vw;
+            width: 50vw;
+            top: 5vh;
+            word-wrap: break-word;
+            transform: translateX(90%);
+            background: linear-gradient(90deg, rgba(255,255,255,1) 0%, rgba(255,255,255,1) 50%, rgba(0,0,0,1) 50%, rgba(0,0,0,1) 100%);
+            border-radius: 50%
+        }
+        #div1::before{
+            position: relative;
+            content: '';
+            width: 25vw;
+            height: 25vw;
+            top: 0;
+            right: 0;
+            transform: translateX(50%);
+            border-radius: 50%;
+            display: block;
+          
+            background: radial-gradient(circle, rgba(255,255,255,1) 0%, rgba(255,255,255,1) 25%, rgba(0,0,0,1) 25%, rgba(0,0,0,1) 100%);
+        }
+        #div1::after{
+            position: relative;
+            content: '';
+            width: 25vw;
+            height: 25vw;
+            top:0;
+            left: 0;
+            transform: translateX(50%);
+            display: block;
+            border-radius: 50%;
+          
+            background: radial-gradient(circle, rgba(0,0,0,1) 0%, rgba(0,0,0,1) 25%, rgba(255,255,255,1) 25%, rgba(255,255,255,1) 100%);
+        }
+
+    </style>
+    <div id='div1'></div>
+
+</body>
+</html>
