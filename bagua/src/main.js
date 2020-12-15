@@ -6,43 +6,46 @@ let string = `
 *以下为样式文件
 */
 #div1{
-    position: absolute;
-    display: block;
-    box-shadow:0 0 3px rgba(0,0,0,0.5);
-    height: 40vw;
-    width: 40vw;
-    top: 5vh;
-    transform: translateX(90%);
-    background: linear-gradient(90deg, rgba(255,255,255,1) 0%, rgba(255,255,255,1) 50%, rgba(0,0,0,1) 50%, rgba(0,0,0,1) 100%);
-    border-radius: 50%;
+    border: 1px solid red;
+    width: 200px;
+    height: 200px;
 }
-#div1::before{
-    position: relative;
-    content: '';
-    width: 20vw;
-    height: 20vw;
-    top: 0;
-    right: 0;
-    transform: translateX(50%);
+/* 接下来我把 div 变成一个八卦图
+ * 注意看好了
+ * 首先，把 div 变成一个圆
+ **/
+#div1{
     border-radius: 50%;
-    display: block;
-  
+    box-shadow: 0 0 3px rgba(0,0,0,0.5);
+    border: none;
+}
+/* 八卦生两仪
+ * 一黑一白
+ **/
+#div1{
+    background: linear-gradient(90deg, rgba(255,255,255,1) 0%, rgba(255,255,255,1) 50%, rgba(0,0,0,1) 50%, rgba(0,0,0,1) 100%);
+}
+/* 阴阳相生 */
+#div1::before{
+    width: 100px;
+    height: 100px;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    background: #000;
+    border-radius: 50%;
     background: radial-gradient(circle, rgba(255,255,255,1) 0%, rgba(255,255,255,1) 25%, rgba(0,0,0,1) 25%, rgba(0,0,0,1) 100%);
 }
 #div1::after{
-    position: relative;
-    content: '';
-    width: 20vw;
-    height: 20vw;
-    top:0;
-    left: 0;
-    transform: translateX(50%);
-    display: block;
+    width: 100px;
+    height: 100px;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    background: #fff;
     border-radius: 50%;
-  
-    background: radial-gradient(circle, rgba(0,0,0,1) 0%, rgba(0,0,0,1) 25%, rgba(255,255,255,1) 25%, rgba(255,255,255,1) 100%);
+    background: radial-gradient(circle, rgba(0,0,0,1) 0%, rgba(0,0,0,1) 25%, rgba(255,255,255,1) 25%, rgba(255,255,255,1) 100%, rgba(0,0,0,1) 100%);
 }
-
 `;
 let n = 0
 let string2=''
