@@ -23,4 +23,4 @@
 [会动的八卦](https://2lifetop.github.io/bagua/src/index.html)
 
 **初窥JS**
-[简单封装DOM]（https://github.com/2lifetop/2lifetop.github.io/tree/main/dom-demo）
+[简单封装DOM](https://github.com/2lifetop/2lifetop.github.io/tree/main/dom-demo)
