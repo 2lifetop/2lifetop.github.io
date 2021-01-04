@@ -14,8 +14,7 @@ window.jQuery = function(selectorOrArray){
                 const elements2 = Array.from(elements[i].querySelectorAll(selector))
                 array = array.concat(elements2) 
             }
-            const newApi = jQuery(array)
-            return newApi
+            return jQuery(array)
         },
         //闭包：函数访问外部变量
         addClass(className){
