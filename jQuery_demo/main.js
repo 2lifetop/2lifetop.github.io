@@ -1,4 +1,2 @@
-const x1 = jQuery('.test1').find('.child')
-console.log(x1)
-x1.addClass('red')
-    .addClass('GREEN')
+const x= jQuery('.test1')
+x.parent().print()
