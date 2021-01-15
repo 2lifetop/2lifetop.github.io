@@ -73,6 +73,7 @@ getJSON.onclick=()=>{
     }
     request.send()
 };
+//分页加载
 let n=1
 getPage.onclick=()=>{
     const request = new XMLHttpRequest();
