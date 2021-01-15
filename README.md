@@ -24,3 +24,12 @@
 
 **初窥JS**
 [简单封装DOM](https://github.com/2lifetop/2lifetop.github.io/tree/main/dom-demo)
+
+**AJAX**
+
+[原理探索](https://2lifetop.github.io/ajax-1/public/index.html)
+
+## 实战
+
+1、[简易前端导航项目](https://2lifetop.github.io/nav/index.html)
+
